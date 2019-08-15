@@ -25,5 +25,6 @@ public class BubbleSorter extends Sorter{
 				break;
 			}
 		}
+		display.updateDisplay();
 	}
 }

@@ -15,7 +15,7 @@ public class _02_InterpolationSearch {
         //2. create two integers called start and end.
 		//   initialize them to 0 and the length of the array minus one
 		//   respectively
-      
+      int start = 0, end = array.length - 1;
         //3. Make a while loop that runs while the following conditions are true:
         //   start is less than or equal to end
         //   value is greater than or equal to the array element at start
