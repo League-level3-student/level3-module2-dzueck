@@ -33,8 +33,19 @@ public class _02_InterpolationSearch {
             //   then set start equal to position plus one
             
             //7. otherwise, set end equal to position minus one
-          
+        while(start <= end && value >= array[start] && value <= array[end]) {
+        	int position = start + (((end - start) / (array[end] - array[start])) * (value - array[start]));
+        	if(array[position] == value) {
+        		return position;
+        	}
+        	if(array[position] < value) {
+        		start = position +1;
+        	}
+        	else {
+        		start = position-1;
+        	}
+        }
         //8. Return -1 because the value was not found
-        return 0;
+        return -1;
     }
 }
